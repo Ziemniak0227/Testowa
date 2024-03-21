@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restauracja </title>
+</head>
+<body>
+    <h1>Witamy w restauracji </h1>  
+    <h4><menu></menu></h4>
+    
+    <form>
+        <input type="checkbox" name="danie" value="Pierogi z mięsem" id="PZM"> Pierogi z mięsem<br>
+        <input type="checkbox" name="danie" value="Schabowy z ziemniakami" id="SZS"> Schabowy z ziemniakami<br>
+        <input type="checkbox" name="danie" value="Karkówka z kapustą" id="KzK"> Karkówka z kapustą<br>
+        <input type="checkbox" name="danie" value="Klopsiki w sosie pomidorowym" id="KWSP"> Klopsiki w sosie pomidorowym<br>
+        <input type="checkbox" name="danie" value="Kurczak curry z ryżem" id="KCZR"> Kurczak curry z ryżem<br>
+        <input type="checkbox" name="danie" value="Sałatka grecka" id="SG"> Sałatka grecka<br>
+        </form>
+
+    <h2>Zarezerwuj stolik online</h2>
+    <form action="rezerwacja.php" method="post">
+      <label for="data">Data </label><br>
+      <input type="text" name="data" id="data"><br><br>
+      <label for="osoby">Ile osób?</label><br>
+      <input type="number" name="osoby" id="osoby"><br><br>
+      <label for="telefon">Twój numer telefonu:</label><br>
+      <input type="text" name="telefon" id="telefon"><br><br>
+      <input type="reset" value="WYCZYŚĆ">
+      <input type="submit" value="Zamów">
+    </form>
+</body>
+</html>
